@@ -1,0 +1,73 @@
+@import "vars"
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+	.first-list__item
+		margin: 0
+//Small: ≥576px
++media-breakpoint-down(sm)
+	.first
+		&-list
+			&__item
+				min-height: 180px
+				max-width: 230px
+	.main
+		&__ttl
+			font-size: 22px
+		&__subttl
+			font-size: 16px
+		&-list
+			&__li
+				margin: 0
+	.foot
+		&__addr
+			margin-bottom: 20px
+		&__phone
+			&:last-child
+				margin-bottom: 20px
+		&-soc
+			display: table
+			margin: 0 auto
+	.dev
+		float: none
+		margin: 0 auto
+
+//Extra small: >0
++media-breakpoint-down(xs)
+	.head
+		&__name
+			padding-left: 0
+			border-left: none
+			text-align: center
+			margin-top: 10px
+	.first
+		&-ttl
+			font-size: 30px
+			margin-top: 40px
+			span
+				font-size: 18px
+		&-list
+			&__item
+				float: none
+				margin: 0 auto
+	.main
+		&__btn
+			font-size: 18px
+			padding: 8px 55px 8px 60px
+			&:before
+				right: 15px
+	.foot
+		&__addr
+			text-align: center
+			padding-left: 0
+			&:before
+				display: none
+		&__phone
+			padding-left: 0
+			background-image: none
+		&-soc
+			margin-bottom: 20px
+
