@@ -43,6 +43,12 @@ button
 	&:focus
 		outline: none
 
+.content
+	overflow-x: hidden
+	background-image: url(../img/content_bg.png)
+	background-size: cover
+	background-position: center top
+
 .head
 	position: relative
 	overflow: hidden
@@ -55,7 +61,7 @@ button
 		max-width: 220px
 		font-size: 13px
 	&__logo
-		max-width: 190px
+		max-width: 260px
 		float: left
 
 .first
@@ -63,15 +69,20 @@ button
 		font-family: $black-font
 		text-align: center
 		font-size: 44px
+		line-height: 1.1
 		text-transform: uppercase
 		color: #191919
 		margin-top: 60px
 		span
-			display: table
 			margin: 0 auto
+			font-size: 32px
 			color: lighten(#191919, 10%)
 			background-color: $accent
 			padding: 5px 10px
+		i
+			font-style: normal
+			font-size: 32px
+			color: lighten(#191919, 10%)
 	&-img
 		display: table
 		margin: 0 auto
@@ -83,8 +94,8 @@ button
 		list-style-type: none
 		&__item
 			display: flex
-			min-height: 200px
-			max-width: 300px
+			min-height: 180px
+			max-width: 420px
 			margin: 0 20px
 			float: left
 			background-image: url(../img/first_item_pattern.png)
@@ -96,8 +107,7 @@ button
 				margin: auto
 				font-family: $bold-font
 				text-align: center
-				background-color: #fff
-				padding: 5px 10px
+				padding: 0 60px
 
 .main
 	background-image: url(../img/main_bg.jpg)
@@ -119,7 +129,7 @@ button
 		text-transform: uppercase
 		text-align: center
 		color: #fff
-		margin-bottom: 20px
+		margin-bottom: 60px
 		position: relative
 		span
 			color: $accent
@@ -132,43 +142,49 @@ button
 		display: table
 		border: 2px solid #fff
 		padding: 10px
-		margin: 0 auto 20px
+		margin: 0 auto 60px
 	&-list
 		display: table
 		list-style-type: none
 		padding-left: 0
-		margin: 0 auto 20px
+		margin: 0 auto 60px
 		&__li
 			display: flex
-			min-height: 220px
-			max-width: 330px
-			margin: 0 20px
+			min-height: 92px
+			max-width: 353px
 			float: left
 			position: relative
-			background-image: url(../img/main_item.png)
 			background-size: cover
+			&.i1
+				background-image: url(../img/main_item1.png)
+			&.i2
+				background-image: url(../img/main_item2.png)
+			&.i3
+				background-image: url(../img/main_item3.png)
 			span
 				display: block
 				margin: auto
 				font-family: $bold-font
+				font-size: 14px
 				text-align: center
 				color: #191919
 				background-color: transparent
-				padding: 0 40px
+				padding: 0 50px
 	&__btn
 		overflow: hidden
 		position: relative
-		display: table
-		//max-width: 320px
+		display: block
+		max-width: 420px
 		padding: 12px 95px 12px 60px
 		margin: 0 auto
 		font-size: 22px
+		text-align: center
 		text-transform: uppercase
 		line-height: 1
 		font-family: $bold-font
 		color: #000
 		border-radius: 40px
-		background-image: -webkit-linear-gradient(90deg,#f1f519 0,#dce000 100%)
+		background-image: -webkit-linear-gradient(90deg,#fed94f 0,#fbe07c 100%)
 		&:before
 			content: ''
 			width: 30px
@@ -219,7 +235,7 @@ button
 			content: ''
 			width: 40px
 			height: 1px
-			background-color: #e4e4e4
+			background-color: #191919
 			position: absolute
 			top: 10px
 			left: 0

@@ -17,7 +17,7 @@
 </head>
 <body>
 <form class="portable-test-wrapper">
-	<input type="hidden" name="title" value="Ответы на вопросы">
+	<input type="hidden" name="title" value="Відповіді на запитання">
 	<!-- LOGO + TITLE START -->
 	<div class="header-line">
 		<div class="form-container">
@@ -77,12 +77,7 @@
 				Вкажіть дату народження Вашої дитини?
 				</h3>
 				<div class="step-slide__grid">
-					<!-- ONE-ITEM START -->
-					<label for="step1-1" class="pick-item">
-					    <input class="pick-item__input" type="radio" name="step1" id="step1-1" value="5-6 лет">
-						<div class="pick-item__label">5-6 лет</div>
-					</label>
-					<!-- ONE-ITEM END -->
+					<input type="text" placeholder="ДД.ММ.РРРР" class="field age" name="step1">
 
 					<div id="next1" class="btn-next-container"></div>
 				</div>
@@ -94,43 +89,43 @@
 			<!-- ONE-STEP START -->
 			<div class="step-slide step-slide-2">
 				<h3 class="step-slide__title">
-				На що Ви більше всього звертаєте увагу при виборі навчального закладу для Вашої дитини
+				На що Ви більше всього звертаєте увагу при виборі навчального закладу для Вашої дитини? (виберіть декілька варіантів)
 				</h3>
 				<div class="step-slide__grid">
 
 					<!-- ONE-ITEM START -->
 					<label for="step2-1" class="pick-item">
-					    <input class="pick-item__input" type="radio" name="step2" id="step2-1" value="Абсолютна безпека">
-						<div class="pick-item__label">Абсолютна безпека</div>
+					    <input class="pick-item__input" type="checkbox" name="checkbox[1]" id="step2-1" value="Безпека на території навчального закладу">
+						<div class="pick-item__label">Безпека на території навчального закладу</div>
 					</label>
 					<!-- ONE-ITEM END -->
 					<!-- ONE-ITEM START -->
 					<label for="step2-2" class="pick-item">
-					    <input class="pick-item__input" type="radio" name="step2" id="step2-2" value="Методологія навчання і розпорядок дня">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[2]" id="step2-2" value="Методологія навчання і розпорядок дня">
 						<div class="pick-item__label">Методологія навчання і розпорядок дня</div>
 					</label>
 					<!-- ONE-ITEM END -->
 					<!-- ONE-ITEM START -->
 					<label for="step2-3" class="pick-item">
-					    <input class="pick-item__input" type="radio" name="step2" id="step2-3" value="Вивчення іноземних мов">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[3]" id="step2-3" value="Вивчення іноземних мов">
 						<div class="pick-item__label">Вивчення іноземних мов</div>
 					</label>
 					<!-- ONE-ITEM END -->
 					<!-- ONE-ITEM START -->
 					<label for="step2-4" class="pick-item">
-					    <input class="pick-item__input" type="radio" name="step2" id="step2-4" value="Раціон харчування">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[4]" id="step2-4" value="Раціон харчування">
 						<div class="pick-item__label">Раціон харчування</div>
 					</label>
 					<!-- ONE-ITEM END -->
 					<!-- ONE-ITEM START -->
 					<label for="step2-5" class="pick-item">
-					    <input class="pick-item__input" type="radio" name="step2" id="step2-5" value="Ціна за дитячий садок">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[5]" id="step2-5" value="Ціна за дитячий садок">
 						<div class="pick-item__label">Ціна за дитячий садок</div>
 					</label>
 					<!-- ONE-ITEM END -->
 					<!-- ONE-ITEM START -->
 					<label for="step2-6" class="pick-item">
-					    <input class="pick-item__input" type="radio" name="step2" id="step2-6" value="Близькість навчального закладу від дому">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[6]" id="step2-6" value="Близькість навчального закладу від дому">
 						<div class="pick-item__label">Близькість навчального закладу від дому</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -185,6 +180,13 @@
 					    <input class="pick-item__input" type="radio" name="step4" id="step4-2" value="Повний день (8:00-19:00 / 560 грн в день)">
 						<div class="pick-item__label">Повний день (8:00-19:00 / 560 грн в день)</div>
 					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step4-3" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step4" id="step4-3" value="Хочу спробувати 1 пробний день (безкоштовно)">
+						<div class="pick-item__label">Хочу спробувати 1 пробний день (безкоштовно)</div>
+					</label>
+					<!-- ONE-ITEM END -->
 					
 					<div id="next4" class="btn-next-container"></div>
 				</div>

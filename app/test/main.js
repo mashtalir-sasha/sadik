@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 	$('input[name="phone"]').mask('+38 (999) 999-99-99');
+	$('.age').mask('99.99.9999');
 
 	$('.step-slide__title').each(function(index, el) {
 		$(el).prepend('<div class="step-slide__title-counter">' + (index + 1) + '</div>');
@@ -29,7 +30,7 @@ $(document).ready(function() {
 		touchEnabled: false,
 		pager: false,
 		nextSelector: '.btn-next-container',
-		nextText: '<div class="btn-next"><span>на следующий шаг</span></div>',
+		nextText: '<div class="btn-next"><span>на наступний крок</span></div>',
 		onSliderLoad: function (currentIndex) {
 			// первоначальные стили
 			$('.main-progress__text').eq(currentIndex).addClass('main-progress__text_active');
