@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+	$('input[type=checkbox]').change(function(e){
+	   if ($('input[type=checkbox]:checked').length > 4) {
+	        $(this).prop('checked', false)
+	        alert("Виберіть від 1 до 4 варіантів");
+	   }
+	})
+
 	$('input[name="phone"]').mask('+38 (999) 999-99-99');
 	$('.age').mask('99.99.9999');
 
